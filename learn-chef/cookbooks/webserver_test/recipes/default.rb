@@ -6,11 +6,18 @@
 # Install the Apache package.
 include_recipe 'yum::default'
 
-# Install the Apache package.
-package 'httpd'
+package_name =
+    service_name =
+        case node['platform']
+          when 'centos' then 'httpd'
+          when 'ubuntu' then 'apache2'
+        end
 
-# Start and enable the httpd service.
-service 'httpd' do
+# Install the package.
+package package_name
+
+# Start and enable the service.
+service service_name do
   action [:enable, :start]
 end
 
