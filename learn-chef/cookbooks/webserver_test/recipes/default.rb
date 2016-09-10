@@ -4,8 +4,6 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 # Install the Apache package.
-include_recipe 'yum::default'
-
 package_name =
     service_name =
         case node['platform']

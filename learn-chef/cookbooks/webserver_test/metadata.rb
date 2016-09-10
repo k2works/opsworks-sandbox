@@ -6,4 +6,3 @@ description 'Installs/Configures webserver_test'
 long_description 'Installs/Configures webserver_test'
 version '0.1.0'
 
-depends 'yum', '~> 4.0.0'
