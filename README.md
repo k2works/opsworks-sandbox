@@ -87,6 +87,19 @@ $ cd cookbooks/rails_app_ubuntu/
 $ kitchen verify
 $ chef exec rspec --color spec/unit/recipes/default_spec.rb 
 ```
-
+### アプリケーションを別レポジトリに分離する
+```
+$ cd /vagrant/rails-app/app/
+$ git init
+$ git add .
+$ git commit -am 'Setup'
+$ git remote add origin git@github.com:k2works/opsworks-sandbox-rails-app.git
+$ git push -u origin master
+$ cd /vagrant
+$ git rm -r rails-app/app/
+$ rm -rf rails-app/app
+$ git submodule add git@github.com:k2works/opsworks-sandbox-rails-app.git rails-app/app
+$ git commit -am 'アプリケーションを別レポジトリに分離する'
+```
 ## 参照
 + [git remote リポジトリを複数登録する](https://bayashi.net/diary/2012/0714)
