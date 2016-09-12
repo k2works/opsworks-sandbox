@@ -78,6 +78,15 @@ $ cd app
 $ bundle
 $ rails s -b 0.0.0.0
 ```
+### クックブックのセットアップ
+```
+$ cd /vagrant/rails-app/
+$ mkdir cookbooks
+$ chef generate cookbook cookbooks/rails_app_ubuntu
+$ cd cookbooks/rails_app_ubuntu/
+$ kitchen verify
+$ chef exec rspec --color spec/unit/recipes/default_spec.rb 
+```
 
 ## 参照
 + [git remote リポジトリを複数登録する](https://bayashi.net/diary/2012/0714)
