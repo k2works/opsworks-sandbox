@@ -70,5 +70,14 @@ $ cd /vagrant/learn-chef/cookbooks/webserver_test/
 $ chef exec rspec --color spec/unit/recipes/default_spec.rb
 ```
 
+## Railsアプリケーション環境構築
+### アプリケーションのセットアップ
+```
+$ cd /vagrant/rails-app/
+$ cd app
+$ bundle
+$ rails s -b 0.0.0.0
+```
+
 ## 参照
 + [git remote リポジトリを複数登録する](https://bayashi.net/diary/2012/0714)
