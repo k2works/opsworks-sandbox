@@ -40,5 +40,24 @@ $ git remote add bitbucket https://k2works@bitbucket.org/k2works/opsworks-sandbo
 $ git push -u bitbucket --all
 ```
 
+## chefの実行
+### ローカルで実行する
+```
+$ cd /vagrant/chef-repo/
+$ chef-client --local-mode hello.rb
+```
+### ローカルで実行する（クックブック）
+```
+$ cd /vagrant/chef-repo/
+$ sudo chef-client --local-mode --runlist 'recipe[learn_chef_apache2]'
+```
+### ローカルで実行する2（クックブック）
+```
+$ cd /vagrant/learn-chef/cookbooks/awesome_customers_ubuntu/
+$ berks vendor cookbooks
+$ sudo chef-client --local-mode --runlist 'recipe[awesome_customers_ubuntu]'
+```
+### 
+
 ## 参照
 + [git remote リポジトリを複数登録する](https://bayashi.net/diary/2012/0714)

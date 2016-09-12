@@ -7,6 +7,12 @@
   },
   "automatic": {
     "languages": {
+      "php": {
+        "version": "5.5.9-1ubuntu4.19",
+        "builddate": "Jul 28 2016 19:31:33",
+        "zend_engine_version": "2.5.0",
+        "zend_opcache_version": "7.0.3"
+      },
       "java": {
         "version": "1.7.0_111",
         "hotspot": {
@@ -78,6 +84,70 @@
       "processor": "x86_64",
       "os": "GNU/Linux",
       "modules": {
+        "ip6t_REJECT": {
+          "size": "12939",
+          "refcount": "1"
+        },
+        "xt_hl": {
+          "size": "12521",
+          "refcount": "6"
+        },
+        "ip6t_rt": {
+          "size": "13537",
+          "refcount": "3"
+        },
+        "ipt_REJECT": {
+          "size": "12541",
+          "refcount": "1"
+        },
+        "xt_LOG": {
+          "size": "17717",
+          "refcount": "10"
+        },
+        "xt_limit": {
+          "size": "12711",
+          "refcount": "13"
+        },
+        "xt_tcpudp": {
+          "size": "12884",
+          "refcount": "21"
+        },
+        "nf_conntrack_netbios_ns": {
+          "size": "12665",
+          "refcount": "0"
+        },
+        "nf_conntrack_broadcast": {
+          "size": "12589",
+          "refcount": "1"
+        },
+        "nf_nat_ftp": {
+          "size": "12770",
+          "refcount": "0"
+        },
+        "nf_conntrack_ftp": {
+          "size": "18638",
+          "refcount": "1"
+        },
+        "nf_conntrack_ipv6": {
+          "size": "18894",
+          "refcount": "8"
+        },
+        "nf_defrag_ipv6": {
+          "size": "34768",
+          "refcount": "1"
+        },
+        "ip6table_filter": {
+          "size": "12815",
+          "refcount": "1"
+        },
+        "ip6_tables": {
+          "size": "26901",
+          "refcount": "1"
+        },
+        "xt_recent": {
+          "size": "18498",
+          "refcount": "0"
+        },
         "vboxsf": {
           "size": "43802",
           "refcount": "1",
@@ -101,7 +171,7 @@
         },
         "nf_conntrack_ipv4": {
           "size": "15012",
-          "refcount": "2"
+          "refcount": "10"
         },
         "nf_defrag_ipv4": {
           "size": "12758",
@@ -113,7 +183,7 @@
         },
         "xt_addrtype": {
           "size": "12635",
-          "refcount": "2"
+          "refcount": "6"
         },
         "iptable_filter": {
           "size": "12810",
@@ -125,19 +195,19 @@
         },
         "xt_conntrack": {
           "size": "12760",
-          "refcount": "1"
+          "refcount": "17"
         },
         "x_tables": {
           "size": "34802",
-          "refcount": "5"
+          "refcount": "15"
         },
         "nf_nat": {
           "size": "21841",
-          "refcount": "3"
+          "refcount": "4"
         },
         "nf_conntrack": {
           "size": "97201",
-          "refcount": "6"
+          "refcount": "11"
         },
         "bridge": {
           "size": "110925",
@@ -206,18 +276,18 @@
           "size": "303102",
           "refcount": "1"
         },
-        "i2c_piix4": {
-          "size": "22155",
-          "refcount": "0"
+        "vboxguest": {
+          "size": "276728",
+          "refcount": "2",
+          "version": "5.0.16"
         },
         "mac_hid": {
           "size": "13205",
           "refcount": "0"
         },
-        "vboxguest": {
-          "size": "276728",
-          "refcount": "2",
-          "version": "5.0.16"
+        "i2c_piix4": {
+          "size": "22155",
+          "refcount": "0"
         },
         "crct10dif_pclmul": {
           "size": "14289",
@@ -264,6 +334,10 @@
           "refcount": "1",
           "version": "3.0"
         },
+        "video": {
+          "size": "19476",
+          "refcount": "0"
+        },
         "libahci": {
           "size": "32716",
           "refcount": "1"
@@ -272,10 +346,6 @@
           "size": "145227",
           "refcount": "0",
           "version": "7.3.21-k8-NAPI"
-        },
-        "video": {
-          "size": "19476",
-          "refcount": "0"
         }
       }
     },
@@ -328,14 +398,14 @@
       },
       "/dev/sda1": {
         "kb_size": "41251136",
-        "kb_used": "6321684",
-        "kb_available": "33193540",
-        "percent_used": "16%",
+        "kb_used": "11213216",
+        "kb_available": "28302008",
+        "percent_used": "29%",
         "mount": "/",
         "total_inodes": "2621440",
-        "inodes_used": "233107",
-        "inodes_available": "2388333",
-        "inodes_percent_used": "9%",
+        "inodes_used": "453530",
+        "inodes_available": "2167910",
+        "inodes_percent_used": "18%",
         "fs_type": "ext4",
         "mount_options": [
           "rw"
@@ -360,9 +430,9 @@
       },
       "vagrant": {
         "kb_size": "487368704",
-        "kb_used": "459779184",
-        "kb_available": "27589520",
-        "percent_used": "95%",
+        "kb_used": "466852368",
+        "kb_available": "20516336",
+        "percent_used": "96%",
         "mount": "/vagrant",
         "total_inodes": "1000",
         "inodes_used": "0",
@@ -406,6 +476,15 @@
           "mode=0620"
         ]
       },
+      "cgroup": {
+        "mount": "/sys/fs/cgroup/cpuset",
+        "fs_type": "cgroup",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "cpuset"
+        ]
+      },
       "rpc_pipefs": {
         "mount": "/run/rpc_pipefs",
         "fs_type": "rpc_pipefs",
@@ -430,15 +509,6 @@
         "fs_type": "rootfs",
         "mount_options": [
           "rw"
-        ]
-      },
-      "cgroup": {
-        "mount": "/sys/fs/cgroup/cpuset",
-        "fs_type": "cgroup",
-        "mount_options": [
-          "rw",
-          "relatime",
-          "cpuset"
         ]
       }
     },
@@ -684,6 +754,27 @@
           "gid": 1002,
           "uid": 1002,
           "shell": "",
+          "gecos": ""
+        },
+        "opscode": {
+          "dir": "/opt/opscode/embedded",
+          "gid": 997,
+          "uid": 998,
+          "shell": "/bin/sh",
+          "gecos": ""
+        },
+        "opscode-pgsql": {
+          "dir": "/var/opt/opscode/postgresql",
+          "gid": 996,
+          "uid": 997,
+          "shell": "/bin/sh",
+          "gecos": ""
+        },
+        "web_admin": {
+          "dir": "/home/web_admin",
+          "gid": 1003,
+          "uid": 996,
+          "shell": "/bin/bash",
           "gecos": ""
         }
       },
@@ -1055,6 +1146,24 @@
           "members": [
 
           ]
+        },
+        "opscode": {
+          "gid": 997,
+          "members": [
+            "opscode"
+          ]
+        },
+        "opscode-pgsql": {
+          "gid": 996,
+          "members": [
+
+          ]
+        },
+        "web_admin": {
+          "gid": 1003,
+          "members": [
+
+          ]
         }
       }
     },
@@ -1238,7 +1347,7 @@
           ],
           "encapsulation": "Ethernet",
           "addresses": {
-            "02:42:4B:B4:54:95": {
+            "02:42:DA:BF:AD:4A": {
               "family": "lladdr"
             },
             "172.17.0.1": {
@@ -1271,15 +1380,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "103487",
-              "packets": "324",
+              "bytes": "81300",
+              "packets": "280",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "103487",
-              "packets": "324",
+              "bytes": "81300",
+              "packets": "280",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -1289,16 +1398,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "242097",
-              "packets": "1950",
+              "bytes": "1200863",
+              "packets": "10151",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "231876",
-              "packets": "2459",
+              "bytes": "9666747",
+              "packets": "14905",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -1307,16 +1416,16 @@
           "eth1": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "9887",
-              "packets": "59",
+              "bytes": "3329",
+              "packets": "26",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "20812",
-              "packets": "141",
+              "bytes": "12905",
+              "packets": "73",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -1357,7 +1466,7 @@
         "model": "70",
         "model_name": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
         "stepping": "1",
-        "mhz": "2494.163",
+        "mhz": "2494.128",
         "cache_size": "6144 KB",
         "physical_id": "0",
         "core_id": "0",
@@ -1428,26 +1537,26 @@
         "surplus": "0"
       },
       "total": "2049984kB",
-      "free": "813668kB",
-      "buffers": "34108kB",
-      "cached": "336060kB",
-      "active": "904060kB",
-      "inactive": "266548kB",
-      "dirty": "36kB",
+      "free": "538604kB",
+      "buffers": "50976kB",
+      "cached": "571196kB",
+      "active": "1109480kB",
+      "inactive": "319032kB",
+      "dirty": "104kB",
       "writeback": "0kB",
-      "anon_pages": "800444kB",
-      "mapped": "58664kB",
-      "slab": "37844kB",
-      "slab_reclaimable": "27740kB",
-      "slab_unreclaim": "10104kB",
-      "page_tables": "6784kB",
+      "anon_pages": "806344kB",
+      "mapped": "107892kB",
+      "slab": "51072kB",
+      "slab_reclaimable": "39604kB",
+      "slab_unreclaim": "11468kB",
+      "page_tables": "9368kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "1024992kB",
-      "committed_as": "1386208kB",
+      "committed_as": "2126088kB",
       "vmalloc_total": "34359738367kB",
-      "vmalloc_used": "10364kB",
-      "vmalloc_chunk": "34359722492kB",
+      "vmalloc_used": "10468kB",
+      "vmalloc_chunk": "34359722180kB",
       "hugepage_size": "2048kB"
     },
     "dmi": {
@@ -1586,10 +1695,10 @@
         "string_2": "vboxRev_105871"
       }
     },
-    "uptime_seconds": 2637,
-    "uptime": "43 minutes 57 seconds",
-    "idletime_seconds": 2600,
-    "idletime": "43 minutes 20 seconds",
+    "uptime_seconds": 1908,
+    "uptime": "31 minutes 48 seconds",
+    "idletime_seconds": 1818,
+    "idletime": "30 minutes 18 seconds",
     "filesystem2": {
       "by_device": {
         "udev": {
@@ -1633,13 +1742,13 @@
         },
         "/dev/sda1": {
           "kb_size": "41251136",
-          "kb_used": "6321684",
-          "kb_available": "33193540",
-          "percent_used": "16%",
+          "kb_used": "11213216",
+          "kb_available": "28302008",
+          "percent_used": "29%",
           "total_inodes": "2621440",
-          "inodes_used": "233107",
-          "inodes_available": "2388333",
-          "inodes_percent_used": "9%",
+          "inodes_used": "453530",
+          "inodes_available": "2167910",
+          "inodes_percent_used": "18%",
           "fs_type": "ext4",
           "mount_options": [
             "rw",
@@ -1679,9 +1788,9 @@
         },
         "vagrant": {
           "kb_size": "487368704",
-          "kb_used": "459779184",
-          "kb_available": "27589520",
-          "percent_used": "95%",
+          "kb_used": "466852368",
+          "kb_available": "20516336",
+          "percent_used": "96%",
           "total_inodes": "1000",
           "inodes_used": "0",
           "inodes_available": "1000",
@@ -1733,6 +1842,25 @@
             "/dev/pts"
           ]
         },
+        "cgroup": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "hugetlb"
+          ],
+          "mounts": [
+            "/sys/fs/cgroup/cpuset",
+            "/sys/fs/cgroup/cpu",
+            "/sys/fs/cgroup/cpuacct",
+            "/sys/fs/cgroup/memory",
+            "/sys/fs/cgroup/devices",
+            "/sys/fs/cgroup/freezer",
+            "/sys/fs/cgroup/blkio",
+            "/sys/fs/cgroup/perf_event",
+            "/sys/fs/cgroup/hugetlb"
+          ]
+        },
         "rpc_pipefs": {
           "fs_type": "rpc_pipefs",
           "mount_options": [
@@ -1768,25 +1896,6 @@
           ],
           "mounts": [
             "/"
-          ]
-        },
-        "cgroup": {
-          "fs_type": "cgroup",
-          "mount_options": [
-            "rw",
-            "relatime",
-            "hugetlb"
-          ],
-          "mounts": [
-            "/sys/fs/cgroup/cpuset",
-            "/sys/fs/cgroup/cpu",
-            "/sys/fs/cgroup/cpuacct",
-            "/sys/fs/cgroup/memory",
-            "/sys/fs/cgroup/devices",
-            "/sys/fs/cgroup/freezer",
-            "/sys/fs/cgroup/blkio",
-            "/sys/fs/cgroup/perf_event",
-            "/sys/fs/cgroup/hugetlb"
           ]
         }
       },
@@ -1832,13 +1941,13 @@
         },
         "/": {
           "kb_size": "41251136",
-          "kb_used": "6321684",
-          "kb_available": "33193540",
-          "percent_used": "16%",
+          "kb_used": "11213216",
+          "kb_available": "28302008",
+          "percent_used": "29%",
           "total_inodes": "2621440",
-          "inodes_used": "233107",
-          "inodes_available": "2388333",
-          "inodes_percent_used": "9%",
+          "inodes_used": "453530",
+          "inodes_available": "2167910",
+          "inodes_percent_used": "18%",
           "fs_type": "rootfs",
           "mount_options": [
             "rw"
@@ -1873,8 +1982,8 @@
           "kb_available": "5120",
           "percent_used": "0%",
           "total_inodes": "256248",
-          "inodes_used": "2",
-          "inodes_available": "256246",
+          "inodes_used": "4",
+          "inodes_available": "256244",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1931,9 +2040,9 @@
         },
         "/vagrant": {
           "kb_size": "487368704",
-          "kb_used": "459779184",
-          "kb_available": "27589520",
-          "percent_used": "95%",
+          "kb_used": "466852368",
+          "kb_available": "20516336",
+          "percent_used": "96%",
           "total_inodes": "1000",
           "inodes_used": "0",
           "inodes_available": "1000",
@@ -2021,6 +2130,17 @@
             "none"
           ]
         },
+        "/sys/fs/cgroup/cpuset": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "cpuset"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
         "/run/rpc_pipefs": {
           "fs_type": "rpc_pipefs",
           "mount_options": [
@@ -2042,17 +2162,6 @@
           ],
           "devices": [
             "systemd"
-          ]
-        },
-        "/sys/fs/cgroup/cpuset": {
-          "fs_type": "cgroup",
-          "mount_options": [
-            "rw",
-            "relatime",
-            "cpuset"
-          ],
-          "devices": [
-            "cgroup"
           ]
         },
         "/sys/fs/cgroup/cpu": {
@@ -2196,14 +2305,14 @@
         "/dev/sda1,/": {
           "device": "/dev/sda1",
           "kb_size": "41251136",
-          "kb_used": "6321684",
-          "kb_available": "33193540",
-          "percent_used": "16%",
+          "kb_used": "11213216",
+          "kb_available": "28302008",
+          "percent_used": "29%",
           "mount": "/",
           "total_inodes": "2621440",
-          "inodes_used": "233107",
-          "inodes_available": "2388333",
-          "inodes_percent_used": "9%",
+          "inodes_used": "453530",
+          "inodes_available": "2167910",
+          "inodes_percent_used": "18%",
           "fs_type": "ext4",
           "mount_options": [
             "rw"
@@ -2235,8 +2344,8 @@
           "percent_used": "0%",
           "mount": "/run/lock",
           "total_inodes": "256248",
-          "inodes_used": "2",
-          "inodes_available": "256246",
+          "inodes_used": "4",
+          "inodes_available": "256244",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2289,9 +2398,9 @@
         "vagrant,/vagrant": {
           "device": "vagrant",
           "kb_size": "487368704",
-          "kb_used": "459779184",
-          "kb_available": "27589520",
-          "percent_used": "95%",
+          "kb_used": "466852368",
+          "kb_available": "20516336",
+          "percent_used": "96%",
           "mount": "/vagrant",
           "total_inodes": "1000",
           "inodes_used": "0",
@@ -2370,6 +2479,16 @@
             "rw"
           ]
         },
+        "cgroup,/sys/fs/cgroup/cpuset": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/cpuset",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "cpuset"
+          ]
+        },
         "rpc_pipefs,/run/rpc_pipefs": {
           "device": "rpc_pipefs",
           "mount": "/run/rpc_pipefs",
@@ -2400,16 +2519,6 @@
           "fs_type": "rootfs",
           "mount_options": [
             "rw"
-          ]
-        },
-        "cgroup,/sys/fs/cgroup/cpuset": {
-          "device": "cgroup",
-          "mount": "/sys/fs/cgroup/cpuset",
-          "fs_type": "cgroup",
-          "mount_options": [
-            "rw",
-            "relatime",
-            "cpuset"
           ]
         },
         "cgroup,/sys/fs/cgroup/cpu": {
@@ -2525,16 +2634,20 @@
         "arch": "all"
       },
       "apache2": {
-        "version": "2.4.7-1ubuntu4.13",
+        "version": "2.4.10-1ubuntu1.1~ubuntu14.04.2",
         "arch": "amd64"
       },
       "apache2-bin": {
-        "version": "2.4.7-1ubuntu4.13",
+        "version": "2.4.10-1ubuntu1.1~ubuntu14.04.2",
         "arch": "amd64"
       },
       "apache2-data": {
-        "version": "2.4.7-1ubuntu4.13",
+        "version": "2.4.10-1ubuntu1.1~ubuntu14.04.2",
         "arch": "all"
+      },
+      "apache2-mpm-prefork": {
+        "version": "2.4.10-1ubuntu1.1~ubuntu14.04.2",
+        "arch": "amd64"
       },
       "apparmor": {
         "version": "2.8.95~2430-0ubuntu5.3",
@@ -2682,6 +2795,14 @@
       },
       "chef": {
         "version": "12.13.37-1",
+        "arch": "amd64"
+      },
+      "chef-manage": {
+        "version": "2.4.3-1",
+        "arch": "amd64"
+      },
+      "chef-server-core": {
+        "version": "12.8.0-1",
         "arch": "amd64"
       },
       "chef-zero": {
@@ -3275,6 +3396,10 @@
       "libalgorithm-merge-perl": {
         "version": "0.08-2",
         "arch": "all"
+      },
+      "libapache2-mod-php5": {
+        "version": "5.5.9+dfsg-1ubuntu4.19",
+        "arch": "amd64"
       },
       "libapparmor-perl": {
         "version": "2.8.95~2430-0ubuntu5.3",
@@ -4246,6 +4371,10 @@
       },
       "libltdl7": {
         "version": "2.4.2-1.7ubuntu1",
+        "arch": "amd64"
+      },
+      "liblua5.1-0": {
+        "version": "5.1.5-5ubuntu0.1",
         "arch": "amd64"
       },
       "liblwp-mediatypes-perl": {
@@ -5548,6 +5677,26 @@
         "version": "5.18.2-2ubuntu1.1",
         "arch": "all"
       },
+      "php5-cli": {
+        "version": "5.5.9+dfsg-1ubuntu4.19",
+        "arch": "amd64"
+      },
+      "php5-common": {
+        "version": "5.5.9+dfsg-1ubuntu4.19",
+        "arch": "amd64"
+      },
+      "php5-json": {
+        "version": "1.3.2-2build1",
+        "arch": "amd64"
+      },
+      "php5-mysql": {
+        "version": "5.5.9+dfsg-1ubuntu4.19",
+        "arch": "amd64"
+      },
+      "php5-readline": {
+        "version": "5.5.9+dfsg-1ubuntu4.19",
+        "arch": "amd64"
+      },
       "pkg-config": {
         "version": "0.26-1ubuntu4",
         "arch": "amd64"
@@ -6370,7 +6519,7 @@
         "guest_additions_revision": "105871"
       }
     },
-    "ohai_time": 1473477982.7525463,
+    "ohai_time": 1473640250.5445898,
     "sessions": {
       "by_session": {
 
@@ -6568,22 +6717,13 @@
     },
     "cloud_v2": null,
     "recipes": [
-      "learn_chef_apache2",
-      "learn_chef_apache2::default"
+
     ],
     "expanded_run_list": [
-      "learn_chef_apache2::default"
+
     ],
     "roles": [
 
-    ],
-    "cookbooks": {
-      "learn_chef_apache2": {
-        "version": "0.1.0"
-      }
-    }
-  },
-  "run_list": [
-    "recipe[learn_chef_apache2]"
-  ]
+    ]
+  }
 }

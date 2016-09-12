@@ -111,3 +111,4 @@ build-iPhoneSimulator/
 id_rsa
 id_rsa.pub
 ssh_config
+nodes
