@@ -1,18 +1,27 @@
-# # encoding: utf-8
-
-# Inspec test for recipe rails_app_ubuntu::default
-
-# The Inspec reference, with examples and extensive documentation, can be
-# found at https://docs.chef.io/inspec_reference.html
-
-unless os.windows?
-  describe user('root') do
-    it { should exist }
-    skip 'This is an example test, replace with your own test.'
+%w[
+git
+curl
+build-essential
+libsqlite3-dev
+nodejs
+].each do |pkg|
+  describe package pkg do
+    it { should be_installed }
   end
 end
 
-describe port(80) do
-  it { should_not be_listening }
-  skip 'This is an example test, replace with your own test.'
+describe command '/opt/ruby_build/builds/myapp/bin/ruby -v' do
+  its('stdout') { should match /2.3.1/ }
+end
+
+describe file('/etc/init.d/myapp') do
+  it { should be_file }
+end
+
+describe command 'curl localhost:8000' do
+  its('stdout') { should match /The page you were looking for doesn't exist/ }
+end
+
+describe port 8000 do
+  it { should be_listening }
 end
