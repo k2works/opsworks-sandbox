@@ -57,7 +57,18 @@ $ cd /vagrant/learn-chef/cookbooks/awesome_customers_ubuntu/
 $ berks vendor cookbooks
 $ sudo chef-client --local-mode --runlist 'recipe[awesome_customers_ubuntu]'
 ```
-### 
+### InSpecの実行
+```
+$ cd /vagrant/learn-chef/cookbooks/webserver_test/
+$ chef gem install kitchen-docker
+$ kitchen verify
+```
+
+### ChefSpecの実行
+```
+$ cd /vagrant/learn-chef/cookbooks/webserver_test/
+$ chef exec rspec --color spec/unit/recipes/default_spec.rb
+```
 
 ## 参照
 + [git remote リポジトリを複数登録する](https://bayashi.net/diary/2012/0714)
