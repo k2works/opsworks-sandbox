@@ -19,6 +19,7 @@ suites:
       - recipe[opsworks_cookbook_demo::add_user]
       - recipe[opsworks_cookbook_demo::create_directory]
       - recipe[opsworks_cookbook_demo::create_files]
+      - recipe[opsworks_cookbook_demo::run_command]
     verifier:
       inspec_tests:
         - test/recipes
