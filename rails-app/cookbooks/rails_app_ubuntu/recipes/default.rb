@@ -21,12 +21,6 @@ end
   end
 end
 
-git "/srv/myapp" do
-  repository 'https://github.com/k2works/opsworks-sandbox-rails-app.git'
-  revision "master"
-  action :sync
-end
-
 ruby_runtime 'myapp' do
   provider :ruby_build
   version '2.3'
@@ -34,6 +28,13 @@ end
 
 application '/srv/myapp' do
   ruby '2.3'
+
+  git "/srv/myapp" do
+    repository 'https://github.com/k2works/opsworks-sandbox-rails-app.git'
+    revision "master"
+    action :sync
+  end
+
   bundle_install do
     deployment true
     without %w{development test}
