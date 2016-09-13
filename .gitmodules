@@ -1,3 +1,6 @@
 [submodule "rails-app/app"]
 	path = rails-app/app
 	url = git@github.com:k2works/opsworks-sandbox-rails-app.git
+[submodule "opsworks-linux-demo/app"]
+	path = opsworks-linux-demo/app
+	url = https://github.com/awslabs/opsworks-windows-demo-nodejs.git

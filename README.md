@@ -117,3 +117,4 @@ $ chef exec rspec --color spec/unit/recipes/default_spec.rb
 + [git remote リポジトリを複数登録する](https://bayashi.net/diary/2012/0714)
 + [6.6 Git のさまざまなツール - サブモジュール](https://git-scm.com/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB)
 + [Application_Ruby Cookbook](https://supermarket.chef.io/cookbooks/application_ruby)
++ [AWS OpsWorks 入門ガイド:Linux](http://docs.aws.amazon.com/ja_jp/opsworks/latest/userguide/gettingstarted-linux.html)
