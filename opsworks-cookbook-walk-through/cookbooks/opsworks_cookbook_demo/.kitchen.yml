@@ -17,6 +17,7 @@ suites:
       - recipe[opsworks_cookbook_demo::default]
       - recipe[opsworks_cookbook_demo::install_package]
       - recipe[opsworks_cookbook_demo::add_user]
+      - recipe[opsworks_cookbook_demo::create_directory]
     verifier:
       inspec_tests:
         - test/recipes

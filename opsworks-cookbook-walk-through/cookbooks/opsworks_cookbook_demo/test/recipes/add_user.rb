@@ -19,3 +19,12 @@ describe user('jdoe') do
   its('shell') { should eq '/bin/bash' }
 end
 
+describe user('ec2-user') do
+  it { should exist }
+  its('uid') { should eq 1002 }
+  its('gid') { should eq 1002 }
+  its('home') { should eq '/home/ec2-user' }
+  its('shell') { should eq '/bin/bash' }
+end
+
+
