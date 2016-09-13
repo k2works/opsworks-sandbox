@@ -15,6 +15,7 @@ suites:
   - name: default
     run_list:
       - recipe[opsworks_cookbook_demo::default]
+      - recipe[opsworks_cookbook_demo::install_package]
     verifier:
       inspec_tests:
         - test/recipes

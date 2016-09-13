@@ -1,6 +1,8 @@
 #
 # Cookbook Name:: opsworks_cookbook_demo
-# Recipe:: default
+# Recipe:: install_package
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
-Chef::Log.info("********** Hello, World! **********")
+package "Install Emacs" do
+  package_name "emacs"
+end
